@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - ConstructOS{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our team</p>
+    </div>
+</section>
+
+<section class="contact-content">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Let's Start a Conversation</h2>
+                <p>Whether you need construction project controls and scheduling services, forensic scheduling analysis, or XER2XLSXGANTT conversion technology, we're here to help. Reach out to us using any of the methods below, or fill out the contact form.</p>
+                
+                <div class="service-areas-info">
+                    <h3>Service Areas</h3>
+                    <p>We provide on-site services in <strong>Los Angeles County</strong>, <strong>Orange County</strong>, and <strong>Ventura County</strong>. We also offer remote services to clients nationwide.</p>
+                </div>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@constructos.com</p>
+                            <p>support@constructos.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(555) 123-4567</p>
+                            <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form" method="POST" action="{{ url_for('contact') }}">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="schedule-builds">Schedule Builds</option>
+                            <option value="schedule-updates">Schedule Updates</option>
+                            <option value="schedule-cost-updates">Schedule & Cost Updates</option>
+                            <option value="forensic-scheduling">Forensic Scheduling</option>
+                            <option value="time-impact-analysis">Time Impact Analysis</option>
+                            <option value="window-analysis">Window Analysis</option>
+                            <option value="reporting">Reporting</option>
+                            <option value="xer2xlsxgantt">XER2XLSXGANTT Conversion</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

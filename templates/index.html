@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block title %}ConstructOS - Construction Project Controls & Scheduling{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-background">
+        <div class="hero-overlay"></div>
+        <img src="{{ url_for('static', filename='images/hero-construction.jpg') }}" alt="Construction Site" class="hero-image" onerror="this.style.display='none'">
+    </div>
+    <div class="hero-content">
+        <h1>Expert Construction Project Controls & Scheduling</h1>
+        <p>Professional scheduling services, forensic analysis, and innovative technology solutions for construction projects</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('services') }}" class="btn btn-primary">Our Services</a>
+            <a href="{{ url_for('contact') }}" class="btn btn-secondary">Get in Touch</a>
+        </div>
+    </div>
+</section>
+
+<section class="image-gallery">
+    <div class="container">
+        <h2>Our Work in Action</h2>
+        <p class="gallery-intro">See how we help construction projects stay on track and within budget</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img src="{{ url_for('static', filename='images/construction-site-1.jpg') }}" alt="Construction Site" class="gallery-image" onerror="this.src='https://via.placeholder.com/600x400/6b46c1/ffffff?text=Construction+Site'">
+                    <div class="gallery-overlay">
+                        <p>Active Construction Site</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img src="{{ url_for('static', filename='images/site-plan-1.jpg') }}" alt="Site Plan" class="gallery-image" onerror="this.src='https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Site+Plan'">
+                    <div class="gallery-overlay">
+                        <p>Detailed Site Planning</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img src="{{ url_for('static', filename='images/construction-site-2.jpg') }}" alt="Construction Progress" class="gallery-image" onerror="this.src='https://via.placeholder.com/600x400/a78bfa/ffffff?text=Project+Progress'">
+                    <div class="gallery-overlay">
+                        <p>Project Progress Tracking</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img src="{{ url_for('static', filename='images/site-plan-2.jpg') }}" alt="Schedule Analysis" class="gallery-image" onerror="this.src='https://via.placeholder.com/600x400/7c3aed/ffffff?text=Schedule+Analysis'">
+                    <div class="gallery-overlay">
+                        <p>Schedule Analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose ConstructOS?</h2>
+            <p class="section-subtitle">Delivering excellence in every project</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Expert Scheduling</h3>
+                <p>Professional schedule builds and updates to keep your construction projects on track</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Forensic Scheduling</h3>
+                <p>Time impact analysis and window analysis for dispute resolution and claims support</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Schedule & Cost Updates</h3>
+                <p>Integrated schedule and cost updates to maintain accurate project controls</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Comprehensive Reporting</h3>
+                <p>Detailed reporting and analysis to support informed decision-making</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tech-showcase">
+    <div class="container">
+        <div class="tech-company-section">
+            <h2>XER2XLSXGANTT</h2>
+            <p>Our technology division specializes in converting XER files to XLSX format, making Primavera P6 schedules more accessible and easier to work with in Excel.</p>
+            <a href="{{ url_for('services') }}" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<section class="service-areas">
+    <div class="container">
+        <h2>Service Areas</h2>
+        <p class="service-areas-intro">We proudly serve clients throughout Southern California and beyond</p>
+        <div class="service-areas-grid">
+            <div class="service-area-card">
+                <div class="service-area-icon">📍</div>
+                <h3>Los Angeles County</h3>
+            </div>
+            <div class="service-area-card">
+                <div class="service-area-icon">📍</div>
+                <h3>Orange County</h3>
+            </div>
+            <div class="service-area-card">
+                <div class="service-area-icon">📍</div>
+                <h3>Ventura County</h3>
+            </div>
+            <div class="service-area-card">
+                <div class="service-area-icon">🌐</div>
+                <h3>Remote Services</h3>
+                <p>Available nationwide</p>
+            </div>
+        </div>
+        <p class="service-areas-note">We provide on-site services in LA County, Orange County, and Ventura County, and are also able to provide services remotely to clients anywhere in the United States.</p>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Improve Your Project Controls?</h2>
+        <p>Let's discuss how ConstructOS can help manage your construction schedules and costs</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary">Contact Us Today</a>
+    </div>
+</section>
+{% endblock %}
+
