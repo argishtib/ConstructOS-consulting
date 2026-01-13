@@ -92,6 +92,18 @@ User types: constructos.com
   - Good support
 - **Website**: [name.com](https://www.name.com)
 
+#### 6. **Hostinger** (Domain + Hosting Bundle)
+- **Cost**: ~$10-15/year for domain, hosting starts at ~$2-4/month
+- **Pros**: 
+  - Very affordable
+  - Can get domain + hosting together
+  - Good for beginners
+  - 24/7 support
+- **Cons**: 
+  - Shared hosting (not ideal for Flask apps)
+  - Limited Python/Flask support on basic plans
+- **Website**: [hostinger.com](https://www.hostinger.com)
+
 ---
 
 ## 🚀 Hosting/Deployment Platforms
@@ -138,7 +150,25 @@ User types: constructos.com
 - **Best for**: Large-scale applications
 - **Website**: [aws.amazon.com/elasticbeanstalk](https://aws.amazon.com/elasticbeanstalk)
 
-#### 5. **VPS (DigitalOcean Droplet, Linode, etc.)**
+#### 5. **Hostinger VPS/Cloud Hosting**
+- **Cost**: $4-10/month (VPS), $9-20/month (Cloud)
+- **What it does**: Virtual private server or cloud hosting
+- **Includes**:
+  - Full server control (VPS)
+  - Can install Python/Flask
+  - Good performance
+- **Pros**: 
+  - Very affordable
+  - Good for budget-conscious businesses
+  - Can host Flask apps on VPS/Cloud plans
+- **Cons**: 
+  - Shared hosting plans don't support Flask well
+  - Need VPS/Cloud plan for Python apps
+  - Requires more technical setup than managed platforms
+- **Best for**: Budget-conscious users comfortable with server management
+- **Website**: [hostinger.com](https://www.hostinger.com)
+
+#### 6. **VPS (DigitalOcean Droplet, Linode, etc.)**
 - **Cost**: $5-10/month
 - **What it does**: Full server control
 - **Includes**:
@@ -215,20 +245,22 @@ TTL: 3600
 
 ## 📋 Recommended Setup for ConstructOS
 
-### Domain Registration:
-**Namecheap** - `constructos.com` (~$12/year)
-- Easy to use
-- Free privacy protection
-- Good support
+### Option 1: Managed Platform (Recommended)
+**Domain**: Namecheap - `constructos.com` (~$12/year)
+**Hosting**: DigitalOcean App Platform (~$5/month)
+- **Total**: ~$72/year
+- **Best for**: Easiest setup, professional, reliable
 
-### Hosting:
-**DigitalOcean App Platform** (~$5/month)
-- Reliable
-- Professional
-- Includes custom domain setup
-- Automatic HTTPS
+### Option 2: Hostinger VPS (Budget Option)
+**Domain + Hosting**: Hostinger VPS (~$4-6/month + domain)
+- **Total**: ~$60-80/year
+- **Best for**: Budget-conscious, comfortable with server setup
+- **Note**: Requires manual Flask/Gunicorn setup
 
-### Total: ~$72/year (~$6/month)
+### Option 3: Hostinger Shared Hosting (Not Recommended for Flask)
+**Why not**: Shared hosting doesn't support Flask/Python apps well
+- **Better for**: WordPress, static sites, PHP apps
+- **Not suitable**: For Flask applications
 
 ---
 

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/logo.svg') }}?v=1">
+    <link rel="alternate icon" type="image/x-icon" href="/favicon.ico?v=1">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.svg') }}?v=1">
     <title>{% block title %}ConstructOS - Construction Project Controls & Scheduling{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
@@ -12,14 +15,14 @@
             <div class="container">
                 <div class="logo">
                     <a href="{{ url_for('index') }}">
-                        <img src="{{ url_for('static', filename='images/logo-placeholder.png') }}" alt="ConstructOS Logo" id="logo-img">
+                        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="ConstructOS Logo" id="logo-img">
                         <span class="logo-text">ConstructOS</span>
                     </a>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="{{ url_for('index') }}" {% if active_page == 'home' %}class="active"{% endif %}>Home</a></li>
                     <li><a href="{{ url_for('about') }}" {% if active_page == 'about' %}class="active"{% endif %}>About</a></li>
-                    <li><a href="{{ url_for('services') }}" {% if active_page == 'services' %}class="active"{% endif %}>Services</a></li>
+                    <li><a href="{{ url_for('services') }}" {% if active_page == 'services' %}class="active"{% endif %}>Consulting Services</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle {% if active_page == 'technology' %}active{% endif %}">Technology <span class="dropdown-arrow">▼</span></a>
                         <ul class="dropdown-menu">
@@ -65,14 +68,14 @@
                     <ul>
                         <li><a href="{{ url_for('index') }}">Home</a></li>
                         <li><a href="{{ url_for('about') }}">About</a></li>
-                        <li><a href="{{ url_for('services') }}">Services</a></li>
+                        <li><a href="{{ url_for('services') }}">Consulting Services</a></li>
                         <li><a href="{{ url_for('contact') }}">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p>Email: info@constructos.com</p>
-                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: contact@constructosx.com</p>
+                    <p>Phone: (818) 617-5942</p>
                 </div>
             </div>
             <div class="footer-bottom">

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import Flask, render_template, request, flash, redirect, url_for, send_from_directory, Response
 from datetime import datetime
 import os
 
@@ -10,6 +10,20 @@ app.config['DEBUG'] = os.environ.get('FLASK_ENV') != 'production'
 @app.context_processor
 def inject_current_year():
     return {'current_year': datetime.now().year}
+
+@app.route('/favicon.ico')
+def favicon():
+    # Serve the .ico file with proper headers
+    ico_path = os.path.join(app.root_path, 'static', 'images', 'logo.ico')
+    
+    if os.path.exists(ico_path):
+        response = send_from_directory(os.path.join(app.root_path, 'static', 'images'), 'logo.ico', mimetype='image/x-icon')
+        # Add cache control headers
+        response.cache_control.max_age = 31536000  # 1 year
+        return response
+    
+    # Return 404 if file doesn't exist
+    return '', 404
 
 @app.route('/')
 def index():
