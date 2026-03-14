@@ -6,7 +6,7 @@
 <section class="hero">
     <div class="hero-background">
         <div class="hero-overlay"></div>
-        <img src="{{ url_for('static', filename='images/hero-construction.jpg') }}" alt="Construction Site" class="hero-image" onerror="this.style.display='none'">
+        <img src="{{ url_for('static', filename='images/hero-construction.svg') }}" alt="Construction Site" class="hero-image" onerror="this.style.display='none'">
     </div>
     <div class="hero-content">
         <h1>Expert Construction Project Controls & Scheduling</h1>
@@ -18,73 +18,48 @@
     </div>
 </section>
 
-<section class="image-gallery">
-    <div class="container">
-        <h2>Our Work in Action</h2>
-        <p class="gallery-intro">See how we help construction projects stay on track and within budget</p>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <div class="gallery-image-wrapper">
-                    <img src="{{ url_for('static', filename='images/construction-site-1.jpg') }}" alt="Construction Site" class="gallery-image" onerror="this.src='https://via.placeholder.com/600x400/6b46c1/ffffff?text=Construction+Site'">
-                    <div class="gallery-overlay">
-                        <p>Active Construction Site</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image-wrapper">
-                    <img src="{{ url_for('static', filename='images/site-plan-1.jpg') }}" alt="Site Plan" class="gallery-image" onerror="this.src='https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Site+Plan'">
-                    <div class="gallery-overlay">
-                        <p>Detailed Site Planning</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image-wrapper">
-                    <img src="{{ url_for('static', filename='images/construction-site-2.jpg') }}" alt="Construction Progress" class="gallery-image" onerror="this.src='https://via.placeholder.com/600x400/a78bfa/ffffff?text=Project+Progress'">
-                    <div class="gallery-overlay">
-                        <p>Project Progress Tracking</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image-wrapper">
-                    <img src="{{ url_for('static', filename='images/site-plan-2.jpg') }}" alt="Schedule Analysis" class="gallery-image" onerror="this.src='https://via.placeholder.com/600x400/7c3aed/ffffff?text=Schedule+Analysis'">
-                    <div class="gallery-overlay">
-                        <p>Schedule Analysis</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="features">
     <div class="container">
         <div class="section-header">
             <h2>Why Choose ConstructOS?</h2>
             <p class="section-subtitle">Delivering excellence in every project</p>
         </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">📅</div>
-                <h3>Expert Scheduling</h3>
-                <p>Professional schedule builds and updates to keep your construction projects on track</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img src="{{ url_for('static', filename='images/button-construction-site.jpg') }}" alt="Expert Scheduling" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/construction-site-1.svg') }}'">
+                    <div class="gallery-overlay">
+                        <h3>Expert Scheduling</h3>
+                        <p>Professional schedule builds and updates to keep your construction projects on track</p>
+                    </div>
+                </div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔍</div>
-                <h3>Forensic Scheduling</h3>
-                <p>Time impact analysis and window analysis for dispute resolution and claims support</p>
+            <div class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img src="{{ url_for('static', filename='images/button-site-plan.jpg') }}" alt="Forensic Scheduling" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/site-plan-1.svg') }}'">
+                    <div class="gallery-overlay">
+                        <h3>Forensic Scheduling</h3>
+                        <p>Time impact analysis and window analysis for dispute resolution and claims support</p>
+                    </div>
+                </div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">💰</div>
-                <h3>Schedule & Cost Updates</h3>
-                <p>Integrated schedule and cost updates to maintain accurate project controls</p>
+            <div class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img src="{{ url_for('static', filename='images/button-project-progress.jpg') }}" alt="Schedule & Cost Updates" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/construction-site-2.svg') }}'">
+                    <div class="gallery-overlay">
+                        <h3>Schedule & Cost Updates</h3>
+                        <p>Integrated schedule and cost updates to maintain accurate project controls</p>
+                    </div>
+                </div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3>Comprehensive Reporting</h3>
-                <p>Detailed reporting and analysis to support informed decision-making</p>
+            <div class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img src="{{ url_for('static', filename='images/button-forensic-analysis.jpg') }}" alt="Comprehensive Reporting" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/forensic-analysis.svg') }}'">
+                    <div class="gallery-overlay">
+                        <h3>Comprehensive Reporting</h3>
+                        <p>Detailed reporting and analysis to support informed decision-making</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

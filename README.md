@@ -69,15 +69,15 @@ The website references `static/images/logo-placeholder.png` in the navigation. W
 4. Recommended logo size: 40px height (width will scale proportionally)
 
 ### Construction Images
-The website includes image placeholders for construction photos and site plans. Add the following images to `static/images/`:
+The website uses SVG placeholders in `static/images/` for the hero and gallery. You can replace them with your own photos by adding JPGs with the same base names (the app will need to reference `.jpg` in the template if you prefer photos over the built-in placeholders):
 
-- `hero-construction.jpg` - Hero background image (recommended: 1920x1080px or larger)
-- `construction-site-1.jpg` - Construction site photo (recommended: 800x600px or larger)
-- `site-plan-1.jpg` - Site plan image (recommended: 800x600px or larger)
-- `construction-site-2.jpg` - Additional construction photo (recommended: 800x600px or larger)
-- `site-plan-2.jpg` - Additional site plan (recommended: 800x600px or larger)
+- `hero-construction.svg` (or `.jpg`) - Hero background (recommended: 1920×1080px or larger)
+- `construction-site-1.svg` (or `.jpg`) - Construction site photo (recommended: 800×600px or larger)
+- `site-plan-1.svg` (or `.jpg`) - Site plan image
+- `construction-site-2.svg` (or `.jpg`) - Additional construction photo
+- `site-plan-2.svg` (or `.jpg`) - Additional site plan
 
-**Note**: If images are not found, placeholder images with purple backgrounds will be displayed automatically. For best results, use high-quality, professional construction and planning images.
+**Note**: SVG placeholders are included so the site works without 404s. For best results, replace with high-quality construction and planning images (use the same filenames with `.jpg` and update the template to use `.jpg` if desired).
 
 ## Customization
 

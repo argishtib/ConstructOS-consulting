@@ -266,12 +266,12 @@ gunicorn -c gunicorn_config.py app:app
 ```
 
 ### 5. Add Images
-Make sure to add your construction images to `static/images/`:
-- hero-construction.jpg
-- construction-site-1.jpg
-- site-plan-1.jpg
-- construction-site-2.jpg
-- site-plan-2.jpg
+SVG placeholders for the hero and gallery are included in `static/images/`. Optionally add your own JPGs (same names, .jpg) and update the template to use them:
+- hero-construction.svg (or .jpg)
+- construction-site-1.svg (or .jpg)
+- site-plan-1.svg (or .jpg)
+- construction-site-2.svg (or .jpg)
+- site-plan-2.svg (or .jpg)
 
 ---
 
