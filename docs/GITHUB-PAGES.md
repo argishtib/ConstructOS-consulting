@@ -54,6 +54,17 @@ To use your Namecheap domain:
 
 4. Enable **Enforce HTTPS** in GitHub Pages settings once DNS propagates
 
+## 5. Keep GitHub Pages in Sync With Local Styling
+
+GitHub Pages serves the site from the **`docs/`** folder. The files in **`docs/static/`** (CSS, JS, images) are what the live site uses. Your Flask app uses the **root `static/`** folder.
+
+**If you change styles or assets in the root `static/` folder, copy them into `docs/static/` before pushing**, or the live site will look different (e.g. missing division badges, hero layout, or other updates). For example:
+
+- Copy `static/css/styles.css` → `docs/static/css/styles.css`
+- Or sync the whole folder: copy `static/*` into `docs/static/`
+
+After syncing, commit and push; the site will update within a few minutes.
+
 ## Done!
 
 Push changes to the `main` branch and the site updates automatically.
