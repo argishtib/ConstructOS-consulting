@@ -99,6 +99,61 @@ header {
     background-color: var(--primary-color);
 }
 
+/* Dropdown (Technology menu) */
+.nav-menu .dropdown {
+    position: relative;
+}
+
+.nav-menu .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dropdown-arrow {
+    font-size: 0.65em;
+    opacity: 0.8;
+}
+
+.nav-menu .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    padding: 8px 0;
+    margin-top: 4px;
+    background: var(--white);
+    box-shadow: var(--shadow-hover);
+    border-radius: 8px;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    z-index: 100;
+}
+
+.nav-menu .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-menu .dropdown-menu li {
+    margin: 0;
+}
+
+.nav-menu .dropdown-menu a {
+    display: block;
+    padding: 10px 16px;
+    color: var(--text-color);
+}
+
+.nav-menu .dropdown-menu a:hover {
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -260,12 +315,18 @@ header {
     line-height: 1.8;
 }
 
-/* CTA Section */
+/* CTA Section – full-width edge-to-edge */
 .cta-section {
-    padding: 80px 20px;
+    padding: 80px 0;
+    width: 100%;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: var(--white);
     text-align: center;
+}
+
+.cta-section .container {
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
 .cta-section h2 {
@@ -486,17 +547,23 @@ header {
 .form-group {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
 }
 
 .form-group label {
-    margin-bottom: 0.5rem;
+    display: block;
+    margin: 0;
     color: var(--dark-color);
     font-weight: 600;
+    font-size: 0.95rem;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
     padding: 12px;
     border: 2px solid #ddd;
     border-radius: 5px;

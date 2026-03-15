@@ -5,8 +5,12 @@
 {% block content %}
 <section class="hero">
     <div class="hero-background">
+        <img src="{{ url_for('static', filename='images/hero-construction.svg') }}" alt="" class="hero-image" onerror="this.style.display='none'">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="{{ url_for('static', filename='video/hero-bg.mp4') }}" type="video/mp4">
+            <source src="{{ url_for('static', filename='video/hero-bg.webm') }}" type="video/webm">
+        </video>
         <div class="hero-overlay"></div>
-        <img src="{{ url_for('static', filename='images/hero-construction.svg') }}" alt="Construction Site" class="hero-image" onerror="this.style.display='none'">
     </div>
     <div class="hero-content">
         <h1>Expert Construction Project Controls & Scheduling</h1>
@@ -61,16 +65,17 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="tech-showcase">
-    <div class="container">
-        <div class="tech-company-section">
-            <h2>XER2XLSXGANTT</h2>
-            <p>Our technology division specializes in converting XER files to XLSX format, making Primavera P6 schedules more accessible and easier to work with in Excel.</p>
-            <a href="{{ url_for('services') }}" class="btn btn-secondary">Learn More</a>
+            <div class="gallery-item">
+                <a href="https://www.xer2xlsxgantt.com" target="_blank" class="gallery-item-link">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1763568258492-9569a0af2127?w=800" alt="XER2XLSXGANTT - Conversion Tool" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/forensic-analysis.svg') }}'">
+                        <div class="gallery-overlay">
+                            <h3>XER2XLSXGANTT</h3>
+                            <p>Our technology division specializes in converting XER files to XLSX format, making Primavera P6 schedules more accessible in Excel.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </section>
