@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}ConstructOS - Construction Project Controls & Scheduling{% endblock %}
+{% block title %}ConstructOS - Consulting & Technology for Construction{% endblock %}
 
 {% block content %}
 <section class="hero">
@@ -13,8 +13,18 @@
         <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
-        <h1>Expert Construction Project Controls & Scheduling</h1>
-        <p>Professional scheduling services, forensic analysis, and innovative technology solutions for construction projects</p>
+        <h1>Consulting & Technology for Construction Projects</h1>
+        <p class="hero-tagline">Two divisions. One focus.</p>
+        <div class="hero-divisions">
+            <div class="hero-division-item">
+                <span class="hero-division-label">Consulting Division</span>
+                <span class="hero-division-desc">Professional scheduling services and forensic analysis.</span>
+            </div>
+            <div class="hero-division-item">
+                <span class="hero-division-label">Technology Division</span>
+                <span class="hero-division-desc">Innovative solutions for construction projects.</span>
+            </div>
+        </div>
         <div class="hero-buttons">
             <a href="{{ url_for('services') }}" class="btn btn-primary">Our Services</a>
             <a href="{{ url_for('contact') }}" class="btn btn-secondary">Get in Touch</a>
@@ -30,6 +40,7 @@
         </div>
         <div class="gallery-grid">
             <div class="gallery-item">
+                <span class="division-badge division-badge-consulting">Consulting</span>
                 <div class="gallery-image-wrapper">
                     <img src="{{ url_for('static', filename='images/button-construction-site.jpg') }}" alt="Expert Scheduling" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/construction-site-1.svg') }}'">
                     <div class="gallery-overlay">
@@ -39,6 +50,7 @@
                 </div>
             </div>
             <div class="gallery-item">
+                <span class="division-badge division-badge-consulting">Consulting</span>
                 <div class="gallery-image-wrapper">
                     <img src="{{ url_for('static', filename='images/button-site-plan.jpg') }}" alt="Forensic Scheduling" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/site-plan-1.svg') }}'">
                     <div class="gallery-overlay">
@@ -48,6 +60,7 @@
                 </div>
             </div>
             <div class="gallery-item">
+                <span class="division-badge division-badge-consulting">Consulting</span>
                 <div class="gallery-image-wrapper">
                     <img src="{{ url_for('static', filename='images/button-project-progress.jpg') }}" alt="Schedule & Cost Updates" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/construction-site-2.svg') }}'">
                     <div class="gallery-overlay">
@@ -57,6 +70,7 @@
                 </div>
             </div>
             <div class="gallery-item">
+                <span class="division-badge division-badge-consulting">Consulting</span>
                 <div class="gallery-image-wrapper">
                     <img src="{{ url_for('static', filename='images/button-forensic-analysis.jpg') }}" alt="Comprehensive Reporting" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/forensic-analysis.svg') }}'">
                     <div class="gallery-overlay">
@@ -66,11 +80,12 @@
                 </div>
             </div>
             <div class="gallery-item">
+                <span class="division-badge division-badge-technology">Technology</span>
                 <a href="https://www.xer2xlsxgantt.com" target="_blank" class="gallery-item-link">
                     <div class="gallery-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1763568258492-9569a0af2127?w=800" alt="XER2XLSXGANTT - Conversion Tool" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/forensic-analysis.svg') }}'">
+                        <img src="https://images.unsplash.com/photo-1763568258492-9569a0af2127?w=800" alt="XER2XLSXGANTT - Conversion Tool (Coming Soon)" class="gallery-image" onerror="this.src='{{ url_for('static', filename='images/forensic-analysis.svg') }}'">
                         <div class="gallery-overlay">
-                            <h3>XER2XLSXGANTT</h3>
+                            <h3>XER2XLSXGANTT (Coming Soon)</h3>
                             <p>Our technology division specializes in converting XER files to XLSX format, making Primavera P6 schedules more accessible in Excel.</p>
                         </div>
                     </div>

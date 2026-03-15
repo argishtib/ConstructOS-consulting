@@ -6,7 +6,7 @@
     <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/logo.svg') }}?v=1">
     <link rel="alternate icon" type="image/x-icon" href="/favicon.ico?v=1">
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.svg') }}?v=1">
-    <title>{% block title %}ConstructOS - Construction Project Controls & Scheduling{% endblock %}</title>
+    <title>{% block title %}ConstructOS - Consulting & Technology for Construction{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
@@ -26,7 +26,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle {% if active_page == 'technology' %}active{% endif %}">Technology <span class="dropdown-arrow">▼</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="https://www.xer2xlsxgantt.com" target="_blank">XER2XLSXGANTT</a></li>
+                            <li><a href="https://www.xer2xlsxgantt.com" target="_blank">XER2XLSXGANTT (Coming Soon)</a></li>
                         </ul>
                     </li>
                     <li><a href="{{ url_for('contact') }}" {% if active_page == 'contact' %}class="active"{% endif %}>Contact</a></li>

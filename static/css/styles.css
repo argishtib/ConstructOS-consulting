@@ -300,6 +300,51 @@ header {
     animation: fadeInUp 0.7s ease;
 }
 
+.hero-tagline {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase;
+    color: var(--link-blue) !important;
+    margin-bottom: 14px !important;
+}
+
+.hero-divisions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 32px;
+    justify-content: center;
+    margin-bottom: 28px;
+    animation: fadeInUp 0.7s ease;
+}
+
+.hero-division-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 14px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--link-blue);
+    border-radius: 12px;
+    min-width: 260px;
+}
+
+.hero-division-label {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--link-blue);
+    margin-bottom: 4px;
+}
+
+.hero-division-desc {
+    font-size: 16px;
+    color: var(--text-primary);
+    line-height: 1.35;
+}
+
 .hero-buttons {
     display: flex;
     gap: 16px;
@@ -394,10 +439,39 @@ header {
 }
 
 .gallery-item {
+    position: relative;
     border-radius: 18px;
-    overflow: hidden;
+    overflow: visible;
     background: var(--bg-gray);
     transition: transform 0.3s ease;
+}
+
+.gallery-item .gallery-image-wrapper {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.division-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.division-badge-consulting {
+    background: var(--link-blue);
+    color: var(--bg-white);
+}
+
+.division-badge-technology {
+    background: #1d1d1f;
+    color: var(--bg-white);
 }
 
 .gallery-item-link {
@@ -626,6 +700,15 @@ header {
     box-shadow: var(--shadow-subtle);
 }
 
+.tech-division-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1d1d1f;
+    margin-bottom: 8px;
+}
+
 .tech-company-section h2 {
     font-size: 32px;
     font-weight: 600;
@@ -723,6 +806,51 @@ header {
     color: var(--text-secondary);
     margin-bottom: 12px;
     line-height: 1.47059;
+}
+
+.about-divisions-intro {
+    margin-bottom: 24px !important;
+}
+
+.divisions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.division-card {
+    padding: 28px;
+    border-radius: 12px;
+    border: 2px solid var(--border-light);
+    background: var(--bg-white);
+}
+
+.division-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.division-consulting {
+    border-color: var(--link-blue);
+    background: rgba(0, 102, 204, 0.04);
+}
+
+.division-consulting h3 {
+    color: var(--link-blue);
+}
+
+.division-technology {
+    border-color: #1d1d1f;
+    background: rgba(29, 29, 31, 0.04);
+}
+
+.division-technology h3 {
+    color: #1d1d1f;
 }
 
 .values-grid {

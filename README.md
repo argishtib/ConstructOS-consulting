@@ -1,6 +1,6 @@
 # ConstructOS Website
 
-A modern, professional Flask website for ConstructOS - a construction project controls and scheduling company with XER2XLSXGANTT technology solutions.
+A modern, professional Flask website for ConstructOS - a construction project controls and scheduling company with XER2XLSXGANTT (coming soon) technology solutions.
 
 ## Project Structure
 
