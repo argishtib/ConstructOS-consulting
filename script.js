@@ -47,6 +47,8 @@ if (contactForm) {
         // Simulate form submission (in a real application, this would send data to a server)
         showFormMessage('Thank you for your message! We will get back to you soon.', 'success');
         contactForm.reset();
+        var counterEl = document.getElementById('message-counter');
+        if (counterEl) counterEl.textContent = '0 / 2000';
         
         // In a real application, you would send the data to your server here
         // Example:

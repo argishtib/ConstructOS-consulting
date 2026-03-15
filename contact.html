@@ -71,9 +71,10 @@
                             <div class="contact-item">
                                 <div class="contact-icon">📍</div>
                                 <div>
-                                    <h3>Office</h3>
-                                    <p>123 Construction Avenue</p>
-                                    <p>Building City, ST 12345</p>
+                                    <h3>Mailing Address</h3>
+                                    <p>501 W Glenoaks Suite 10 PMB 212</p>
+                                    <p>Glendale, CA 91202</p>
+                                    <p>USA</p>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +111,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
+                                <span id="message-counter" class="char-counter">0 / 2000</span>
                             </div>
                             <button type="submit" class="btn btn-primary">Send Message</button>
                             <div id="form-message" class="form-message"></div>
@@ -141,6 +143,7 @@
                     <h4>Contact Info</h4>
                     <p>Email: contact@constructosx.com</p>
                     <p>Phone: (818) 617-5942</p>
+                    <p>501 W Glenoaks Suite 10 PMB 212<br>Glendale, CA 91202, USA</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -150,6 +153,20 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Message character counter
+        (function() {
+            var msg = document.getElementById('message');
+            var counter = document.getElementById('message-counter');
+            if (msg && counter) {
+                function updateCounter() {
+                    counter.textContent = msg.value.length + ' / 2000';
+                }
+                msg.addEventListener('input', updateCounter);
+                msg.addEventListener('paste', function() { setTimeout(updateCounter, 0); });
+            }
+        })();
+    </script>
 </body>
 </html>
 

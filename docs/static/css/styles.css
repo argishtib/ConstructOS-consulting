@@ -964,6 +964,14 @@ header {
     min-height: 120px;
 }
 
+.char-counter {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--text-muted, #6b7280);
+    text-align: right;
+}
+
 .form-message {
     padding: 12px 16px;
     border-radius: 10px;
