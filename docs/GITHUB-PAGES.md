@@ -56,7 +56,7 @@ To use your Namecheap domain:
 
 ## 5. Keep GitHub Pages in Sync With Local Styling
 
-GitHub Pages serves the site from the **`docs/`** folder. The files in **`docs/static/`** (CSS, JS, images) are what the live site uses. Your Flask app uses the **root `static/`** folder.
+GitHub Pages serves the site from the **`docs/`** folder. The files in **`docs/static/`** (CSS, JS, images) are what the live site uses. The root **`static/`** folder is the source to copy from when you make changes.
 
 **If you change styles or assets in the root `static/` folder, copy them into `docs/static/` before pushing**, or the live site will look different (e.g. missing division badges, hero layout, or other updates). For example:
 

@@ -23,10 +23,6 @@ wheels/
 .installed.cfg
 *.egg
 
-# Flask
-instance/
-.webassets-cache
-
 # Environment variables
 .env
 .env.local
